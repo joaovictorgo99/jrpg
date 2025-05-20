@@ -16,7 +16,7 @@ Just run and have fun.
 
 <summary>Model Class Diagram</summary>
 
-![Model class diagram](/images/jrpg-modeluml.png)
+![Model class diagram](/diagrams/jrpg-modeluml.png)
 
 </details>
 
@@ -24,7 +24,7 @@ Just run and have fun.
 
 <summary>Repository Class Diagram</summary>
 
-![Repository class diagram](/images/jrpg-repositoryuml.png)
+![Repository class diagram](/diagrams/jrpg-repositoryuml.png)
 
 </details>
 
@@ -32,7 +32,7 @@ Just run and have fun.
 
 <summary>Utils Class Diagram</summary>
 
-![Utils class diagram](/images/jrpg-utilsuml.png)
+![Utils class diagram](/diagrams/jrpg-utilsuml.png)
 
 </details>
 
@@ -40,6 +40,6 @@ Just run and have fun.
 
 <summary>View Class Diagram</summary>
 
-![View class diagram](/images/jrpg-viewuml.png)
+![View class diagram](/diagrams/jrpg-viewuml.png)
 
 </details>
