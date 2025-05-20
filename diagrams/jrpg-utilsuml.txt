@@ -1,0 +1,45 @@
+@startuml
+skin rose
+title JRPG Utils Package
+header Class Diagram
+footer getters, setters and constructors have been omitted
+
+package "utils" 
+{
+    class BattleUtils {
+        + BattleUtils()
+        + {static} void newBattle(boolean newGame)
+    }
+
+    class EnemyUtils {
+        + EnemyUtils()
+        + {static} int attack(Enemy enemy, Player player, Turn turn)
+    }
+
+    class GameUtils {
+        + GameUtils()
+        + {static} void newGame(Game game)
+    }
+
+    class PlayerUtils {
+        + PlayerUtils()
+        + {static} int attack(Player player, Enemy enemy)
+        + {static} void defend(Player player, Turn turn)
+        + {static} int heal(Player player)
+        + {static} String levelUp(Player player)
+        + {static} void recoverPower(Player player)
+    }
+
+    class RandomUtils {
+        + RandomUtils()
+        + {static} int generateNumber(int lower, int upper)
+        + {static} String generateType()
+    }
+
+    class TurnUtils{
+        + TurnUtils()
+        + {static} void newTurn(boolean newBattle)
+    }
+}
+
+@enduml

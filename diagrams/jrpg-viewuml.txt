@@ -1,0 +1,26 @@
+@startuml
+skin rose
+title JRPG View Package
+header Class Diagram
+footer getters, setters and constructors have been omitted
+
+package "view" 
+{
+    class View {
+        + View()
+        + void setButtonEnabled(boolean enabled)
+        + void setTextEnemyTextArea()
+        + void setTextPlayerTextArea()
+        + void setBattleTextBattleTextField()
+        + String setAttackTextBattleTextArea(int damagePoints)
+        + void setDefendTextBattleTextArea()
+        + void setHealTextBattleTextArea(int healPoints)
+        + void enemyAction()
+        + void endGame(int damage)
+        + void endBattle(int damage)
+    }
+
+    JFrame <|-- View
+}
+
+@enduml

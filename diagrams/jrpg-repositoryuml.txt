@@ -1,0 +1,50 @@
+@startuml
+skin rose
+title JRPG Repository Package
+header Class Diagram
+footer getters, setters and constructors have been omitted
+
+package "repository" 
+{
+    class BattleRepository {
+        - {static} List<Battle> battles
+
+        + BattleRepository()
+        + {static} void addBattle(Battle battle)
+        + {static} List<Battle> getBattles()
+    }
+
+    class EnemyRepository {
+        - {static} List<Enemy> enemies
+
+        + EnemyRepository()
+        + {static} void addEnemy(Enemy enemy)
+        + {static} List<Enemy> getEnemies()
+    }
+
+    class GameRepository {
+        - {static} List<Game> games
+
+        + GameRepository()
+        + {static} void addGame(Game game)
+        + {static} List<Game> getGames()
+    }
+
+    class PlayerRepository {
+        - {static} List<Player> players
+
+        + PlayerRepository()
+        + {static} void addPlayer(Player player)
+        + {static} List<Player> getPlayers()
+    }
+
+    class TurnRepository {
+        - {static} List<Turn> turns
+
+        + TurnRepository()
+        + {static} void addTurn(Turn turn)
+        + {static} List<Turn> getTurns()
+    }
+}
+
+@enduml

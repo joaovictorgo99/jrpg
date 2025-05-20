@@ -1,0 +1,57 @@
+@startuml
+skin rose
+title JRPG Model Package
+header Class Diagram
+footer getters, setters and constructors have been omitted
+
+package "model" 
+{
+    class Battle {
+        - int id
+        - boolean playerWinner
+
+        + Battle()
+    }
+
+    abstract class Creature {
+        - int life
+        - int level
+
+        + Creature()
+    }
+
+    class Enemy {
+        - String type
+
+        + Enemy()
+    }
+
+    class Game {
+        - boolean gameOver
+
+        + Game()
+    }
+
+    class Player {
+        - int maxLife
+        - int power
+        - int maxPower
+
+        + Player()
+    }
+
+    class Turn {
+        - int id
+        - boolean playerTurn
+        - boolean defenseOn
+        - boolean criticalDamage
+        - boolean criticalHeal
+
+        + Turn()
+    }
+
+    Creature <|-- Enemy
+    Creature <|-- Player
+}
+
+@enduml
