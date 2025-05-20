@@ -4,7 +4,7 @@ A JRPG written in Java programming language (it's a Java-RPG xD).
 
 ## How it Works
 
-It's a simple turn-based game. On your turn, you can attack, defend or heal yourself, and on the enemies' turn, they will attack you.
+It's a simple turn-based game. On your turn, you can attack, defend or heal yourself, and on the enemies' turn, they will attack you. The goal is to survive as many battles as possible (or to defeat as many enemies as you can, it depends on your point of view).
 
 ## How to Use
 
